@@ -1,0 +1,137 @@
+<html>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style type="text/css">
+body{
+  background-color:#f4f2f1;
+  text-decoration:none;
+}
+  #cent {
+  background-color: #ffffff  ;
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-top:-25px; /* this is half the height of your div*/  
+  margin-left:-375px; /*this is half of width of your div*/
+  border:solid black 1px;
+  padding: 30px;
+  border-radius: 10px;
+  border-width: 2px;
+  box-shadow: 2.5px 2.5px #69119B;
+}
+.mslides{display: none;}
+</style>
+<body>
+  <div class="w3-content" style="max-width:2000px;margin-top:100px;">
+<div class="w3-content w3-bar-block w3-grey" style="float: right;width:199px;height:768px;" id="s">
+  <a href="SE.php" class="w3-bar-item w3-button w3-hover-green">Mobile</a><br>
+  <a href="datacard.html" class="w3-bar-item w3-button w3-hover-green">DTH</a><br>
+  <a href="#" class="w3-bar-item w3-button w3-hover-green">DataCard</a>
+ </div>
+<div class="w3-content" style="width:1600px; margin-left:75px; border: solid 0.75px;">
+  <img class="1slides" src="rech.jpg" style="width:100%">
+  <img class="1slides" src="dth.jpg" style="width:100%">
+</div>
+
+  <div class="w3-top">
+  <div class="w3-bar w3-yellow w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+     <a class="w3-bar-item w3-button w3-padding-large w3-hover-green" style="font-size: 25px;"><i>Rechargezzz</i><p style="font-size: 13px;">Where recharing is ezz.</p></a>
+      <a href="temp.html" class="btn btn-info w3-red w3-large w3-hover-green" role="button" style="float: right; margin-top: 23px; margin-right: 12px; border: none;">Register</a>
+</div>
+</div>
+<div id=cent>
+<p style="font-size: 15px;">RECHARGE YOUR DATACARD</p>
+<p style="font-size: 10px;">Tell us your number and we will figure out the rest</p>
+  <form>
+    Mobile Number <input type="text" name="Phone Number" style="border: solid black 1px; border-radius: 5px; border: solid 0.5px; border-color: #FFC300  
+;" placeholder="+91"  maxlength="10" required><br> 
+
+
+<input type="radio" onclick="javascript:j1();" name="service" value="Prp" style="margin:25px;" id="yesc" checked> Prepaid 
+     <input type="radio" onclick="javascript:j1();" name="service" value="Pop" style="margin:25px;" id="noc"> Postpaid  <a href="paydata.php" class="btn btn-info w3-red w3-large w3-hover-blue" role="button" style="float: right; margin-top: 12px; margin-left: 100px; border: none;">Proceed</a><br>
+         <div id="ifYes">
+    <select style=" color: #1815D2; background-color: #eeeeee; border-radius: 5px; border: solid 0.5px; border-color: #FFC300  
+;">
+          <option value="Operator">DataCard Operator</option>
+          <option value="aircel">Aircel</option>
+          <option value="airtel">Airtel</option>
+          <option value="bsnl">BSNL</option>
+          <option value="Tata">Tata Docomo GSM</option>
+          <option value="idea">Idea</option>
+          <option value="mtnl">MTNL delhi</option>
+          <option value="tr">Telenor</option>
+          <option value="vodafone">Vodafone</option>
+          <option value="tatac">Tata Docomo CDMA</option>
+          <option value="mtnl1">MTNL Mumbai</option>
+          <option value="jio">JIO</option>
+        </select>
+  <select style="color: #1815D2; background-color: #eeeeee; border-radius: 5px; margin-left: 50px; border: solid 0.5px; border-color: #FFC300  
+;">
+          <option value="Circle">Circle</option>
+          <option value="AP">Andhra Pradesh</option>
+          <option value="As">Assam</option>
+          <option value="Bi">Bihar</option>
+          <option value="Cn">Chennai</option>
+          <option value="dl">Delhi</option>
+          <option value="gj">Gujrat</option>
+          <option value="hr">Haryana</option>
+          <option value="hp">Himachal Pradesh</option>
+          <option value="Ka">Karnataka</option>
+          <option value="kl">Kerala</option>
+          <option value="mp">Madhya Pradesh</option>
+          <option value="mr">Maharastra</option>
+          <option value="mu">Mumbai</option>
+          <option value="ne">North East</option>
+          <option value="Or">Orissa</option>
+          <option value="pj">Punjab</option>
+          <option value="rj">Rajasthan</option>
+          <option value="tn">Tamilnadu</option>
+          <option value="upe">Uttar Pradesh(E)</option>
+          <option value="upw">Uttar Pradesh(W)</option>
+          <option value="wb">West Bengal</option>
+          <option value="jk">JK</option>
+          <option value="Uc">Uttarnchal</option>
+  </select>
+</div>
+       <div id="ifno" style="display:none;">
+    <select style="color: #1815D2; background-color: #eeeeee; border-radius: 5px; border: solid 0.5px; border-color: #FFC300  
+;">
+          <option value="Operator">Datacard Operator</option>
+          <option value="aircel">Aircel</option>
+          <option value="airtel">Airtel</option>
+          <option value="bsnl">BSNL</option>
+          <option value="Tata">Tata Docomo GSM</option>
+          <option value="idea">Idea</option>
+          <option value="mtnl">MTNL delhi</option>
+          <option value="tr">Telenor</option>
+          <option value="vodafone">Vodafone</option>
+          <option value="tatac">Tata Docomo CDMA</option>
+          <option value="mtnl1">MTNL Mumbai</option>
+          <option value="jio">JIO</option>
+        </select>
+    </div>
+      </form>
+    </div>
+      </body>
+      <script type="text/javascript">
+
+function j1() {
+    if (document.getElementById('yesc').checked) {
+        document.getElementById('ifYes').style.display = 'block';
+    }
+    else{
+      document.getElementById('ifYes').style.display = 'none';
+    }
+    if (document.getElementById('noc').checked) {
+      document.getElementById('ifno').style.display = 'block';
+}
+else{
+  document.getElementById('ifno').style.display = 'none';
+}
+}
+</script>
+        </html>
